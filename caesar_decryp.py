@@ -6,7 +6,7 @@ def bruteforce(text):
                 base = ord("A") if char.isupper() else ord('a')
                 final += chr((ord(char) - base + shift)%26 + base)
             else:
-                continue
+                final += char
         print(f"{shift}. {final}")
 
 bruteforce(input("> "))
